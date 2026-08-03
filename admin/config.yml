@@ -28,10 +28,13 @@ collections:
                   - { label: "映画絵(Movie paint)", value: "Movie" }
               - { label: "制作年", name: "year", widget: "string", required: false }
               - { label: "説明文", name: "description", widget: "text", required: false }
-              - label: "画像"
+              - label: "画像(まとめて複数選択できます)"
                 name: "images"
-                widget: "list"
-                field: { label: "画像", name: "image", widget: "image" }
+                widget: "image"
+                multiple: true
+                media_library:
+                  config:
+                    multiple: true
 
   - name: "about"
     label: "About / サイト情報"
