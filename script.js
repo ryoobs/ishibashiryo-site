@@ -111,7 +111,9 @@ function renderDetail(id) {
       <button class="back-link" data-route="${backRoute}">← 一覧へ戻る</button>
       <h2 class="fd">${w.title}</h2>
       <p class="meta">${categoryLabel(w.category)}${w.year ? " · " + w.year : ""}</p>
+<div class="images-grid">
       ${w.images.map((src) => `<img src="${src}" alt="${w.title}" />`).join("")}
+      </div>
       ${w.description ? `<p class="description">${w.description}</p>` : ""}
     </section>
   `;
