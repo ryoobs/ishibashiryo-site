@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "works"
+    label: "作品"
+    files:
+      - name: "works"
+        label: "作品一覧を編集"
+        file: "data/works.json"
+        fields:
+          - label: "作品"
+            name: "items"
+            widget: "list"
+            summary: "{{title}} ({{category}})"
+            fields:
+              - { label: "タイトル", name: "title", widget: "string" }
+              - label: "カテゴリ"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "仕事の絵(Homeに表示)", value: "Work" }
+                  - { label: "オリジナル", value: "Original" }
+                  - { label: "映画絵(Movie paint)", value: "Movie" }
+              - { label: "制作年", name: "year", widget: "string", required: false }
+              - { label: "説明文", name: "description", widget: "text", required: false }
+              - label: "画像"
+                name: "images"
+                widget: "list"
+                field: { label: "画像", name: "image", widget: "image" }
+
+  - name: "about"
+    label: "About / サイト情報"
+    files:
+      - name: "site"
+        label: "サイト情報を編集"
+        file: "data/site.json"
+        fields:
+          - { label: "自己紹介文", name: "bio", widget: "text" }
+          - { label: "メールアドレス", name: "email", widget: "string", required: false }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Storeリンク", name: "store", widget: "string", required: false }

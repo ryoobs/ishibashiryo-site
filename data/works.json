@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "BRUTUS No.1050",
+      "category": "Work",
+      "year": "2024",
+      "description": "雑誌BRUTUSの特集扉絵として制作。",
+      "images": ["images/brutus-1050-1.jpg"]
+    },
+    {
+      "title": "山と渓谷『角幡唯介のあの山を登れば』",
+      "category": "Work",
+      "year": "2024",
+      "description": "連載挿絵。山岳をテーマにした一枚。",
+      "images": ["images/yamatokeikoku-1.jpg", "images/yamatokeikoku-2.jpg"]
+    },
+    {
+      "title": "LA LA LAND",
+      "category": "Movie",
+      "year": "2023",
+      "description": "『映画を全部描く』シリーズより。",
+      "images": ["images/lalaland-1.jpg"]
+    },
+    {
+      "title": "無題",
+      "category": "Original",
+      "year": "2024",
+      "description": "個人制作のオリジナル作品。",
+      "images": ["images/original-1-1.jpg"]
+    }
+  ]
+}
